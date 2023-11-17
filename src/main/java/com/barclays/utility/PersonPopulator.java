@@ -25,35 +25,35 @@ public class PersonPopulator {
 
     public void populate(){
 
-        Vehicle toyota = new Car("Toyota", 15000.00);
-        //vehicleRepository.save(toyota);
-
-        Vehicle nissan = new Car("Nissan", 10000.00);
-        //vehicleRepository.save();
-
-        Vehicle audi = new Car("Audi", 25000.00);
-        //vehicleRepository.save();
-        vehicleRepository.save(new Car("Mercedes", 25000.00));
-
-        Vehicle tesla = new Truck("Tesla", 100000.00);
-//        vehicleRepository.save(tesla);
-        vehicleRepository.save(new Truck("Range Rover", 150000.00));
-        vehicleRepository.save(new Truck("Tundra", 75000.00));
-
-        Person bobby = new Person("Bobby", "Ayvazov");
-        bobby.addVehicle(toyota);
-        bobby.addVehicle(tesla);
-        personRepository.save(bobby);
-
-        Person alice = new Person("Alice", "Yu");
-        alice.addVehicle(nissan);
-        personRepository.save(alice);
-
-        Person krasi = new Person("Krasimir", "Ayvazov");
-        krasi.addVehicle(audi);
-        personRepository.save(krasi);
-
-        personRepository.save(new Person("My boy", "Alan"));
+//        Vehicle toyota = new Car("Toyota", 15000.00);
+//        //vehicleRepository.save(toyota);
+//
+//        Vehicle nissan = new Car("Nissan", 10000.00);
+//        //vehicleRepository.save();
+//
+//        Vehicle audi = new Car("Audi", 25000.00);
+//        //vehicleRepository.save();
+//        vehicleRepository.save(new Car("Mercedes", 25000.00));
+//
+//        Vehicle tesla = new Truck("Tesla", 100000.00);
+////        vehicleRepository.save(tesla);
+//        vehicleRepository.save(new Truck("Range Rover", 150000.00));
+//        vehicleRepository.save(new Truck("Tundra", 75000.00));
+//
+//        Person bobby = new Person("Bobby", "Ayvazov");
+//        bobby.addVehicle(toyota);
+//        bobby.addVehicle(tesla);
+//        personRepository.save(bobby);
+//
+//        Person alice = new Person("Alice", "Yu");
+//        alice.addVehicle(nissan);
+//        personRepository.save(alice);
+//
+//        Person krasi = new Person("Krasimir", "Ayvazov");
+//        krasi.addVehicle(audi);
+//        personRepository.save(krasi);
+//
+//        personRepository.save(new Person("My boy", "Alan"));
     }
 
 }

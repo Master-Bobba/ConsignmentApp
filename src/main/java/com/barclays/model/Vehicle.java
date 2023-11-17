@@ -1,15 +1,17 @@
 package com.barclays.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity
+@MappedSuperclass
 @Getter
 @Setter
 @NoArgsConstructor
-public abstract class Vehicle {
+//@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public class Vehicle {
 
     @Id
     @GeneratedValue
@@ -19,6 +21,10 @@ public abstract class Vehicle {
     private double price;
 
     protected String type;
+
+    @ManyToOne
+    @JsonBackReference
+    protected Person owner;
 
     public Vehicle(String brand, double price){
         this.brand = brand;

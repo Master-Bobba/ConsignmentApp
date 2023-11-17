@@ -12,8 +12,8 @@ public class ConsignmentAppApplication {
 	public static void main(String[] args) {
 		ApplicationContext appContext = SpringApplication.run(ConsignmentAppApplication.class, args);
 
-		PersonPopulator personPopulator = appContext.getBean("personPopulator", PersonPopulator.class);
-		personPopulator.populate();
+//		PersonPopulator personPopulator = appContext.getBean("personPopulator", PersonPopulator.class);
+//		personPopulator.populate();
 
 //		VehiclePopulator vehiclePopulator = appContext.getBean("vehiclePopulator", VehiclePopulator.class);
 //		vehiclePopulator.populate();
