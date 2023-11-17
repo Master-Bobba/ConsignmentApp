@@ -15,8 +15,8 @@ public class ConsignmentAppApplication {
 		PersonPopulator personPopulator = appContext.getBean("personPopulator", PersonPopulator.class);
 		personPopulator.populate();
 
-		VehiclePopulator vehiclePopulator = appContext.getBean("vehiclePopulator", VehiclePopulator.class);
-		vehiclePopulator.populate();
+//		VehiclePopulator vehiclePopulator = appContext.getBean("vehiclePopulator", VehiclePopulator.class);
+//		vehiclePopulator.populate();
 
 
 	}

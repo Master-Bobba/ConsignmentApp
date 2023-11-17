@@ -1,10 +1,7 @@
 package com.barclays.model;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -24,12 +21,17 @@ public class Person {
     private String firstName;
     private String secondName;
 
+    @OneToMany(cascade = CascadeType.PERSIST)
+    private List<Vehicle> vehicles;
+
     public Person(String firstName, String secondName){
         this.firstName = firstName;
         this.secondName = secondName;
+        vehicles = new ArrayList<>();
     }
 
-//    @OneToMany
-//    private List<Vehicle> vehicles = new ArrayList<Vehicle>()
+    public void addVehicle(Vehicle vehicle){
+        this.vehicles.add(vehicle);
+    }
 
 }
