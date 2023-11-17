@@ -13,6 +13,7 @@ public class Truck extends Vehicle{
 
     public Truck(String brand, double price){
         super(brand, price);
+        type = "Truck";
     }
 
 }

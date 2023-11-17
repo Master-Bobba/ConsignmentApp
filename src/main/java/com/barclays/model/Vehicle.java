@@ -20,6 +20,8 @@ public abstract class Vehicle {
     private String brand;
     private double price;
 
+    protected String type;
+
     public Vehicle(String brand, double price){
         this.brand = brand;
         this.price = price;
